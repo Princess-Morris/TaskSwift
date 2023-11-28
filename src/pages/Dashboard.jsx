@@ -1,27 +1,28 @@
-import React from 'react'
-import { Box, SimpleGrid, Text } from "@chakra-ui/react";
+import React, { useEffect, useState } from 'react'
+import { SimpleGrid } from "@chakra-ui/react";
+// import { useLoaderData } from 'react-router-dom';
 
 export default function Dashboard () {
+  //  const tasks = useLoaderData()
 
+  const [tasks, setTasks] = useState([])
+
+  useEffect(() => {
+     taskLoad()
+  }, [])
+
+  const taskLoad = async () => {
+    const res = await fetch('http://localhost:5000/tasks')
+
+    const data = await res.json()
+    setTasks(data)
+  }
   
   return (
-    <SimpleGrid p='10px' spacing={10} minChildWidth='250px'>
-      <Box bg='white' h='150px' border='1px solid'>
-        <Text
-        color={{base: 'red', md: 'blue', lg:'pink'}}
-        >HEllo text</Text>
-      </Box>
-      <Box bg='white' h='150px' border='1px solid'>Hello</Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-      <Box bg='white' h='150px' border='1px solid'></Box>
-
-
+    <SimpleGrid spacing={10} minChildWidth='300px'>
+       {tasks.map((task) => (
+          <div>{task.title}</div>
+       ))}
     </SimpleGrid>
 
   );

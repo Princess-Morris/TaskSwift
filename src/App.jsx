@@ -9,7 +9,6 @@ import {
   import RootLayout from './layouts/RootLayout'
   import Dashboard from './pages/Dashboard'
   import Create from './pages/Create'
-  // import Profile from '/pages/Profile'
   import Prof from './pages/Prof'
 
 
@@ -17,7 +16,7 @@ import {
   const router = createBrowserRouter(
     createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-        <Route index element={<Dashboard />} />
+        <Route index element={<Dashboard />}/>
         <Route path="create" element={<Create />} />
         <Route path="prof" element={<Prof />} />
      </Route>
