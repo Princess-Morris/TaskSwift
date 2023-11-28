@@ -11,11 +11,12 @@ import {
   import Create from './pages/Create'
   // import Profile from '/pages/Profile'
   import Prof from './pages/Prof'
-  
+
+
   // router and routes
   const router = createBrowserRouter(
     createRoutesFromElements(
-    <Route path="/" elemett={<RootLayout />}>
+    <Route path="/" element={<RootLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="create" element={<Create />} />
         <Route path="prof" element={<Prof />} />
