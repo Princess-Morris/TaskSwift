@@ -12,7 +12,7 @@ export default function Navbar() {
   
   return (
 
-    <Flex as="nav" p="10px" bg="yellow" 
+    <Flex as="nav" p="10px" bg="gray.300" mb='50px'
     alignItems="center" 
     >
         <Heading as="h2">Swift Task</Heading>
