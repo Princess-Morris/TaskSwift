@@ -7,25 +7,25 @@ export default function Prof(){
     return(
         <Tabs mt='40px' p='20px'colorScheme="blue" variant='enclosed'>
             <TabList>
-            <Tab _selected={{color: 'white', bg: 'gray'}}>Account Info</Tab>
-            <Tab _selected={{color: 'white', bg: 'gray'}}>Task History</Tab>
+            <Tab _selected={{color: 'white', bg: 'purple.400'}}>Account Info</Tab>
+            <Tab _selected={{color: 'white', bg: 'purple.400'}}>Task History</Tab>
             </TabList>
 
             <TabPanels>
               <TabPanel>
                 <List spacing='4'>
                   <ListItem>
-                    <ListIcon as={EmailIcon} />
+                    <ListIcon as={EmailIcon} color='teal.400' />
                     Email: okpataprincessmorris3@gmail.com
                   </ListItem>
 
                   <ListItem>
-                    <ListIcon as={ChatIcon} />
+                    <ListIcon as={ChatIcon} color='teal.400'/>
                     Lorem ipsum dolor sit amet.
                   </ListItem>
 
                   <ListItem>
-                    <ListIcon as={StarIcon} />
+                    <ListIcon as={StarIcon}color='teal.400' />
                     Lorem ipsum dolor sit amet, consectetur adipisicing.
                   </ListItem>
                 </List>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Card, CardBody, CardFooter, CardHeader, SimpleGrid, Text, Flex, Box, Heading, HStack, Spacer, Divider} from "@chakra-ui/react";
+import { Card, CardBody, CardFooter, CardHeader, SimpleGrid, Text, Flex, Box, Heading, HStack, Spacer, Divider, Avatar} from "@chakra-ui/react";
 // import { useLoaderData } from 'react-router-dom';
 import { IconButton } from '@chakra-ui/react';
 
@@ -31,11 +31,9 @@ export default function Dashboard () {
         key={task.id}>
           <CardHeader>
           <Flex gap='5'>
-              <Box w='50px' h='50px'>
-                <Text>AV</Text>
-              </Box>
+              <Avatar src={task.img} />
               <Box>
-                <Heading as='h2' size='sm'>{task.title}</Heading>
+                <Heading as='h2' size='sm' mb='5px'>{task.title}</Heading>
                 <Text>by {task.author}</Text>
               </Box>
             </Flex>
@@ -52,14 +50,16 @@ export default function Dashboard () {
            <Button
            variant='ghost'
             leftIcon={<ViewIcon />}
-            // colorScheme="teal"
+            colorScheme="teal"
            >
             View
            </Button>
 
            <Button 
            variant='ghost'
-           leftIcon={<EditIcon />}>
+           leftIcon={<EditIcon />}
+           colorScheme="teal"
+           >
             Watch
            </Button>
              </HStack>

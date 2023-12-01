@@ -12,9 +12,12 @@ export default function RootLayout () {
         bg='gray.500'
         minHeight={{lg: '100vh'}}
         p={{base: '20px', lg: '30px'}}
+        pt={{lg: '35px'}}
+        // mx={{base: '15px'}}
+        // borderRadius={{base: '5px'}}
         >
           <Sidebar />
-
+ 
         </GridItem>
 
         <GridItem

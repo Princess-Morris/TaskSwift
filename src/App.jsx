@@ -8,7 +8,7 @@ import {
   // layouts and pages
   import RootLayout from './layouts/RootLayout'
   import Dashboard from './pages/Dashboard'
-  import Create from './pages/Create'
+  import Create, { createAction } from './pages/Create'
   import Prof from './pages/Prof'
 
 
@@ -17,7 +17,7 @@ import {
     createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
         <Route index element={<Dashboard />}/>
-        <Route path="create" element={<Create />} />
+        <Route path="create" element={<Create />} action={createAction} />
         <Route path="prof" element={<Prof />} />
      </Route>
     )
