@@ -1,1 +1,1 @@
-![Screenshot of the Dashboard UI](https://raw.githubusercontent.com/Princess-Morris/TaskSwift/blob/master/swift-dashboard.png)
+![Screenshot of the Dashboard UI](https://raw.githubusercontent.com/Princess-Morris/TaskSwift/master/swift-dashboard.png)
