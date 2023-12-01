@@ -5,4 +5,4 @@
 
 ![Screenshot of the Profile UI!](img/profile-pg.png)
 
-![Form page!](img/form.png)
+![Screenshot of the Form UI](img/form-pg.png)
