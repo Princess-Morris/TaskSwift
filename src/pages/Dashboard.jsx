@@ -26,7 +26,7 @@ export default function Dashboard () {
   return (
     <SimpleGrid spacing={10} minChildWidth='300px'>
        {tasks && tasks.map((task) => (
-        <Card 
+          <Card 
          borderTop='4px' borderColor='gray.400' bg='white'
         key={task.id}>
           <CardHeader>
