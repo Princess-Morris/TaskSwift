@@ -8,7 +8,7 @@ export default function Create () {
           <FormControl isRequired mb='40px'>
             <FormLabel>Task name:</FormLabel>
             <Input type="text" name='title' />
-            <FormHelperText>Enter a descriptive task name.</FormHelperText>
+            <FormHelperText>Enter a descriptive task name</FormHelperText>
           </FormControl>
 
           <FormControl isRequired mb='40px'>
